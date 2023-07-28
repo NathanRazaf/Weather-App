@@ -1,0 +1,16 @@
+@import 'background';
+@import 'root';
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  overflow: hidden;
+}
