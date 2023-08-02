@@ -1,0 +1,13 @@
+#left-side {
+  margin: 0;
+  #title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: url("../assets/weather-title-gif.gif") no-repeat center center;
+    background-size: contain;
+    width: 600px;
+    height: 200px;
+  }
+}

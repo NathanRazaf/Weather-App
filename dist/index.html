@@ -16,14 +16,115 @@
     <div id="bgOverlay"></div>
 
     <div id="root">
-        <div id="header">
-            <div id="searchField">
-                <input type="text" id="search" placeholder="Search">
-                <button id="searchBtn">Search</button>
+        <div id="left-side">
+            <div id="title-box">
+                <img src="./assets/partly-cloudy-day.png" alt="cloudy" id="cloudy">
+                <h1>Celestial Casts</h1>
+            </div>
+            <div id="search-box">
+                <img src="./assets/pointing-arrow.gif" alt="pointing-arrow">
+                <div id="search">
+                    <label for="search-input">Search for a city !</label>
+                    <input type="text" id="search-input" placeholder="London">
+                    <span id="search-error" class="hidden">Please enter a valid city name</span>
+                    <button id="search-btn">
+                        Search
+                        <img src="./assets/magnify%20(1).svg" alt="magnify">
+                    </button>
+                </div>
+                <img src="./assets/pointing-arrow.gif" alt="pointing-arrow" class="reversed">
+            </div>
+            <div id="unit-changer">
+                <button id="celsius" class="active">°C</button>
+                <button id="fahrenheit">°F</button>
             </div>
         </div>
-        <div id="no"></div>
+
+        <div id="current-weather">
+            <div id="town-details">
+
+                <div id="town-name-box">
+                    <span id="town-name"></span>
+                    <span id="country-name"></span>
+                </div>
+
+                <div id="town-date-box">
+                    <span id="town-date"></span>
+                    <span id="current-hour"></span>
+                </div>
+            </div>
+
+            <div id="weather-main-details">
+
+                <span id="current-temp"></span>
+
+                <div id="current-weather-description">
+                    <img width="50px" height="50px" id="current-weather-img" src="#" alt="weather">
+                    <span id="current-weather-text">Cloudy</span>
+                </div>
+            </div>
+
+            <div id="weather-detail-grid">
+                <div class="weather-detail-box">
+                    <img class="weather-img-description" src="./assets/thermometer.png" alt="thermometer">
+                    <div class="weather-text-box">
+                        <span class="weather-label">Feels like</span>
+                        <span id="current-feels-like"></span>
+                    </div>
+                </div>
+                <div class="weather-detail-box">
+                    <img class="weather-img-description" src="./assets/humidity.png" alt="humidity">
+                    <div class="weather-text-box">
+                        <span class="weather-label">Humidity</span>
+                        <span id="current-humidity"></span>
+                    </div>
+                </div>
+                <div class="weather-detail-box">
+                    <img class="weather-img-description" src="./assets/rain.png" alt="rain">
+                    <div class="weather-text-box">
+                        <span class="weather-label">Chance of rain</span>
+                        <span id="current-rain-chance"></span>
+                    </div>
+                </div>
+                <div class="weather-detail-box">
+                    <img class="weather-img-description" src="./assets/wind.png" alt="wind-speed">
+                    <div class="weather-text-box">
+                        <span class="weather-label">Wind speed</span>
+                        <span id="current-wind-speed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hourly-weather-div">
+            <div id="hourly-weather-header">
+                <span id="hourly-weather-header-text">Hourly weather</span>
+                <div id="hour-page-changer">
+                    <img id="hour-page-left" src="./assets/pointing-arrow.gif" alt="pointing-arrow" class="reversed">
+                    <span id="hour-page-number">1</span>
+                    <img id="hour-page-right" src="./assets/pointing-arrow.gif" alt="pointing-arrow">
+                </div>
+            </div>
+
+            <div id="hourly-weather-box">
+
+            </div>
+        </div>
+
+        <div id="daily-weather-div">
+
+            <span id="daily-weather-header-text">Daily weather</span>
+
+            <div id="daily-weather-box">
+            </div>
+        </div>
+
+        <div id="footer">
+            <a href="https://www.flaticon.com/free-icons/pixelated" title="pixelated icons">Pixelated icons created by Freepik - Flaticon</a>
+        </div>
+
     </div>
+
     <script src="bundle.js"></script>
 </body>
 </html>
