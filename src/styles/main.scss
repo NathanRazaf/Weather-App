@@ -1,5 +1,10 @@
 @import 'background';
 @import 'root';
+@import 'left-side';
+@import 'footer';
+@import 'center-top';
+@import 'hourly-weather';
+@import 'daily-weather';
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 html, body {
@@ -13,4 +18,16 @@ html, body {
   line-height: 1.5;
   color: #fff;
   overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.reversed {
+  transform:scaleX(-1);
+}
+
+.weather-img {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
 }

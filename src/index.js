@@ -1,16 +1,6 @@
 import './styles/main.scss';
-import data from './scripts/weather-data';
+import dom from './scripts/dom';
+import data from "./scripts/weather-data";
+import util from "./scripts/util";
 
-const button = document.querySelector('button');
-const input = document.querySelector('input');
-
-button.addEventListener('click', () => {
-    data.getHourlyForecast(input.value);
-    data.getWeeklyForecast(input.value);
-});
-
-window.onload = function() {
-    data.getHourlyForecast('London');
-    data.getWeeklyForecast('London');
-
-};
+window.onload = () => {dom.initialize()};
